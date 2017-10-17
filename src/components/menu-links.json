@@ -1,0 +1,5 @@
+[
+  { "to": "/journal", "emoji": "📖", "title": "Journal" },
+  { "to": "/software", "emoji": "💻", "title": "Software" },
+  { "to": "/photography", "emoji": "📷", "title": "Photography" }
+]
