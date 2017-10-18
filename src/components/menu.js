@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 
 import links from './menu-links.json'
-import logo from '../../static/richter-logo.svg'
+import logo from '../assets/richter-logo.svg'
 
 const SideMenu = styled.header`
   display: -webkit-box;

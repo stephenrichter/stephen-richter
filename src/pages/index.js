@@ -4,6 +4,7 @@ import {Row, Column} from '../components/grid'
 import {CenteredLayout} from '../components/centered-layout'
 
 import Intro from '../components/intro'
+import Photo from '../assets/stephen-richter.jpg'
 
 const Avatar = styled.img`
   width: 100%;
@@ -41,7 +42,7 @@ export default class Homepage extends Component {
   renderPhoto () {
     return (
       <Column colspan="1" last>
-        <Avatar className="profile-picture" src="stephen-richter.jpg" />
+        <Avatar className="profile-picture" src={Photo} alt="stephen richter profile" />
       </Column>
     )
   }

@@ -4,6 +4,8 @@ html, body, #___gatsby {
   padding: 0;
   margin: 0;
   background: #fff;
+  font-family: 'muli', sans-serif;
+  line-height: 32px;
 }
 
 * {
@@ -30,7 +32,7 @@ html, body, #___gatsby {
 
 h1 {
   font-family: 'ovo';
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -38,12 +40,21 @@ h2 {
   font-weight: 300;
 }
 
-p {
+h3 {
   font-family: 'muli';
+  font-weight: 300;
+}
+
+h4 {
+  font-family: 'muli';
+  font-weight: 700;
 }
 
 section a {
   color: #111;
   text-decoration: none;
+}
+
+section a:hover {
   border-bottom: 3px solid #E73840;
 }
