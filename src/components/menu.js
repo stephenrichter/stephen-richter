@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import links from './menu-links.json'
 import logo from '../assets/richter-logo.svg'
 
-const SideMenu = styled.header`
+const SideMenu = styled.nav`
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,7 +26,7 @@ const SideMenu = styled.header`
 const MenuLink = styled.div`
   text-decoration: none;
   color: #42ab79;
-  font: 600 12px 'open sans', helvetica, arial;
+  font: 400 12px/32px 'muli', 'open sans', helvetica, arial;
   margin-right: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -41,6 +41,10 @@ const MenuLink = styled.div`
   }
 `
 
+const Logo = styled.img`
+  margin: 24px 0;
+`
+
 const Emoji = styled.span`
   position: absolute;
   left: calc(100% + 8px);
@@ -52,12 +56,42 @@ const Emoji = styled.span`
   font-size: 18px;
 `
 
+const Social = styled.div`
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+`
+const SocialLink = styled.a`
+  border-radius: 50%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  margin: 0 8px 15px;
+  transition: .3s;
+  text-align: center;
+  color: #fff;
+  opacity: .7;
+  width: 28px;
+  height: 28px;
+  line-height: 26px;
+`
+const GithubLink = SocialLink.extend`
+  background: #afb6ca;
+  border: 1px solid #afb6ca;
+`
+const TwitterLink = SocialLink.extend`
+  background: #1DA1F2;
+  border: 1px solid #1DA1F2;
+`
+
 export default class Menu extends Component {
   render () {
     return (
       <SideMenu>
         {this.renderLogo()}
         {links.map((l, i) => this.renderLink(l, i))}
+        {this.renderSocial()}
       </SideMenu>
     )
   }
@@ -76,8 +110,17 @@ export default class Menu extends Component {
   renderLogo () {
     return (
       <a className="logo" href="/">
-        <img src={logo} alt="Stephen Richter Logo" />
+        <Logo src={logo} alt="Stephen Richter Logo" />
       </a>
+    )
+  }
+
+  renderSocial () {
+    return (
+      <Social>
+        <GithubLink className="iconfont icon-github" href="https://github.com/stephenrichter" title="Github" target="_blank"></GithubLink>
+        <TwitterLink className="iconfont icon-twitter" href="https://twitter.com/stephen_richter" title="Twitter" target="_blank"></TwitterLink>
+      </Social>
     )
   }
 }

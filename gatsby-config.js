@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,7 +19,7 @@ module.exports = {
       options: {
         fonts: [
           `ovo`,
-          `muli\:300,400,400i,700`
+          `muli\: 300,400,400i,700`
         ]
       }
     }

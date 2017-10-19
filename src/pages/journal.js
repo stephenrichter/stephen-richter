@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 import {Row, Column} from '../components/grid'
-import {CenteredLayout} from '../components/centered-layout'
+import CenteredLayout from '../components/centered-layout'
 
 const Post = styled.article`
   display: grid;
@@ -32,7 +32,11 @@ export default class Journal extends Component {
     const posts = this.props.data.allMarkdownRemark.edges
 
     return (
-      <CenteredLayout>
+      <CenteredLayout name="journal"
+                      title={`Journal - ${this.props.data.site.siteMetadata.title}`}
+                      desc="Technology, marketing, and productivity"
+                      type="website"
+                      image="https://cldup.com/go95bqT7sK.jpg">
         <Row>
           <div>
             <h1>Journal</h1>
@@ -47,7 +51,6 @@ export default class Journal extends Component {
   }
 
   renderArticle (post, index) {
-    console.log(post.frontmatter.date);
     return (
       <Post key={index}>
         <PostDate>
@@ -67,7 +70,14 @@ export default class Journal extends Component {
 }
 
 export const query = graphql`
-  query MyPosts {
+  query JournalQuery {
+    site {
+      siteMetadata {
+        title,
+        description
+      }
+    }
+
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
