@@ -1,9 +1,16 @@
 import React, { Component }  from 'react'
-import styled from 'styled-components'
-import './reset.css'
-import './base.css'
+import styled, { injectGlobal } from 'styled-components'
 
+import resetCSS from './reset'
 import Menu from '../components/menu'
+
+injectGlobal`
+  ${resetCSS}
+  body {
+    font: 18px 'muli', sans-serif;
+    line-height: 1.75
+  }
+`
 
 const Wrapper = styled.div`
   display: -webkit-box;

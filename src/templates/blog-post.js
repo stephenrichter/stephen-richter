@@ -1,10 +1,14 @@
 import React from "react"
-import {CenteredLayout} from '../components/centered-layout'
+import CenteredLayout from '../components/centered-layout'
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <CenteredLayout>
+    <CenteredLayout name="blogpost"
+                    title={post.frontmatter.title}
+                    desc="A blog post."
+                    type="website"
+                    image="https://cldup.com/go95bqT7sK.jpg">
       <h1>
         {post.frontmatter.title}
       </h1>
