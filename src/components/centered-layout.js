@@ -2,6 +2,18 @@ import React, {Component} from 'react'
 import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 
+import favicon from '../assets/stephen-richter-favicon.jpg'
+
+const Container = styled.div`
+  h1 {
+    font-family: 'ovo', 'Times New Roman', serif;
+    font-size: 2.5rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+  }
+`
+
 const Center = styled.div`
   width: 80%;
   height: calc(100% - 120px);
@@ -11,7 +23,7 @@ const Center = styled.div`
 export default class CenteredLayout extends Component {
   render () {
     return (
-      <div>
+      <Container>
         <Helmet title={this.props.title}>
           <meta name="description" content={this.props.desc} />
           <meta property="og:type" content={this.props.type} />
@@ -26,12 +38,12 @@ export default class CenteredLayout extends Component {
           <meta name="twitter:description" content={this.props.desc} />
           <meta name="twitter:image" content={this.props.image} />
           <link rel="canonical" href={this.props.url || "http://stephenrichter.ca"} />
-          <link rel="icon" type="image/png" href="https://c1.staticflickr.com/5/4353/37319896181_52a796bcc7_s.jpg" />
+          <link rel="icon" type="image/png" href={favicon} />
         </Helmet>
         <Center>
           {this.props.children}
         </Center>
-      </div>
+      </Container>
     )
   }
 }

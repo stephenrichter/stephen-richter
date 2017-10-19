@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 
 import links from './menu-links.json'
 import logo from '../assets/richter-logo.svg'
+import SocialIcons from './social-icons'
 
 const SideMenu = styled.nav`
   display: -webkit-box;
@@ -91,7 +92,7 @@ export default class Menu extends Component {
       <SideMenu>
         {this.renderLogo()}
         {links.map((l, i) => this.renderLink(l, i))}
-        {this.renderSocial()}
+        <SocialIcons />
       </SideMenu>
     )
   }
@@ -112,15 +113,6 @@ export default class Menu extends Component {
       <a className="logo" href="/">
         <Logo src={logo} alt="Stephen Richter Logo" />
       </a>
-    )
-  }
-
-  renderSocial () {
-    return (
-      <Social>
-        <GithubLink className="iconfont icon-github" href="https://github.com/stephenrichter" title="Github" target="_blank"></GithubLink>
-        <TwitterLink className="iconfont icon-twitter" href="https://twitter.com/stephen_richter" title="Twitter" target="_blank"></TwitterLink>
-      </Social>
     )
   }
 }

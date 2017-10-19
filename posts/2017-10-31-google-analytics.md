@@ -1,5 +1,5 @@
 ---
-title: "Google Analytics from Small Businesses"
+title: "Google Analytics for Small Businesses"
 date: "2017-10-31"
 ---
 
