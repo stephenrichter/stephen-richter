@@ -7,10 +7,19 @@ import favicon from '../assets/stephen-richter-favicon.jpg'
 const Container = styled.div`
   h1 {
     font-family: 'ovo', 'Times New Roman', serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-family: 'muli', 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
   }
   p {
     margin-bottom: 1.25rem;
+    color: #666;
   }
 `
 

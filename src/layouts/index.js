@@ -8,6 +8,8 @@ injectGlobal`
   ${resetCSS}
   body {
     font: 18px 'muli', sans-serif;
+  }
+  p {
     line-height: 1.75
   }
 `

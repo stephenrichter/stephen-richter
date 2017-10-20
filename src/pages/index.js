@@ -12,6 +12,20 @@ const Avatar = styled.img`
   border-radius: 50%;
 `
 
+const Title = styled.h1`
+  margin-bottom: 0.5rem;
+  font-size: 4.2rem !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+`
+
+const Subtitle = styled.h2`
+  margin-top: 0 !important;
+  margin-bottom: 2rem;
+  font: 300 26px Open Sans,sans-serif;
+  color: #000;
+`
+
 export default class Homepage extends Component {
   render() {
     return (
@@ -31,12 +45,12 @@ export default class Homepage extends Component {
   renderIntro () {
     return (
       <Column colspan="3">
-        <h1 className="title">
+        <Title>
           I build software.
-        </h1>
-        <h2>
+        </Title>
+        <Subtitle>
           My name is <strong>Stephen Richter</strong>. I recently founded <a href="http://getkozmos.com">Kozmos</a>, a better bookmarking service for everyone.
-        </h2>
+        </Subtitle>
         <Intro />
         <a href="mailto:stephenrichter15@gmail.com">Let's work together</a>
       </Column>
