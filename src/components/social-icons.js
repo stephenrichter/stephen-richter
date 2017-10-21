@@ -4,6 +4,9 @@ import styled from 'styled-components'
 const Icons = styled.div`
   margin-top: 10px;
   text-align: center;
+  align-self: center;
+  position: absolute;
+  bottom: 32px;
 
   a {
     cursor: pointer;
@@ -52,14 +55,14 @@ export default class SocialIcons extends Component {
   render() {
     return (
       <Icons>
-        {icons.map(i => this.renderIcon(i))}
+        {icons.map((icon, index) => this.renderIcon(icon, index))}
       </Icons>
     )
   }
 
-  renderIcon(icon) {
+  renderIcon(icon, index) {
     return (
-      <a title={icon.title} href={icon.link} target="_blank" dangerouslySetInnerHTML={{ __html: icon.svg }}></a>
+      <a key={index} title={icon.title} href={icon.link} target="_blank" dangerouslySetInnerHTML={{ __html: icon.svg }}></a>
     )
   }
 }

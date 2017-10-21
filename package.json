@@ -8,6 +8,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "debounce-fn": "^1.0.0",
     "gatsby": "^1.9.62",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-google-fonts": "0.0.3",
