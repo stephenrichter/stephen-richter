@@ -12,15 +12,16 @@ const Post = styled.article`
 
 const PostDate = styled.div`
   color: #999;
-  font-size: 14px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  line-height: 32px;
+  line-height: 2.0 !important;
 `
 
-const PostTitle = styled.h4`
-  font-weight: 700;
-  line-height: 32px;
+const PostTitle = styled.div`
+  font-size: 1.8rem;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
 `
 
 const Excerpt = styled.div`

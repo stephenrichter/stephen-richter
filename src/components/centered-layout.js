@@ -6,20 +6,29 @@ import favicon from '../assets/stephen-richter-favicon.jpg'
 
 const Container = styled.div`
   h1 {
-    font-family: 'ovo', 'Times New Roman', serif;
-    font-size: 3rem;
+    font-family: Ovo, 'Times New Roman', serif;
+    font-size: 4.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
-  h2 {
-    font-family: 'muli', 'Open Sans', sans-serif;
-    font-size: 26px;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-  }
   p {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    font-weight: 300;
     margin-bottom: 1.25rem;
     color: #666;
+  }
+  a {
+    color: #111;
+    font-weight: 400;
+    line-height: 1.75;
+    text-decoration: none;
+    border-bottom: 3px solid #E73840;
+    transition: all 0.5s ease;
+
+    &:hover {
+      border-bottom: 3px solid transparent;
+    }
   }
 `
 

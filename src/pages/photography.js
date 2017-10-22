@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Row, Column} from '../components/grid'
+import {Row} from '../components/grid'
 import CenteredLayout from '../components/centered-layout'
 import MasonryGrid from '../components/masonry-grid'
 

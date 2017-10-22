@@ -1,88 +1,30 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
-import debounce from 'debounce-fn'
-
-const Masonry = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  max-height: ${props => props.height ? props.height : '200vh'};
-  margin-left: -8px; /* Adjustment for the gutter */
-`
-
-const Brick = styled.div`
-  margin: 0 8px 8px 0; /* Some gutter */
-  width: ${props => props.width ? props.width : '33%'};
-`
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const MasonryImage = styled.img`
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  filter: brightness(50%);
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+
+  &:hover {
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+  }
 `
 
 export default class MasonryGrid extends Component {
-  constructor(props) {
-    super(props)
-    this.onResize = debounce(this.onResize.bind(this), 500)
-  }
-
-  componentWillMount() {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', this.onResize)
-    }
-
-    this.setState({
-      selected: null,
-      columns: this.findColumnCount(),
-      gridHeight: this.calculateGridHeight()
-    })
-  }
-
-  componentWillUnmount() {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('resize', this.onResize)
-    }
-  }
-
-  onResize () {
-    this.setState({
-      selected: null,
-      columns: this.findColumnCount(),
-      gridHeight: this.calculateGridHeight()
-    })
-  }
-
-  findColumnCount() {
-    if (typeof window === 'undefined') return 3
-
-    const width = window.innerWidth
-
-    if (width < 500) return 1
-    if (width < 900) return 2
-    if (width < 1700) return 3
-    return 4
-  }
-
-  calculateGridHeight() {
-    return '200vh';
-  }
-
-  render () {
+  
+  render() {
     return (
-      <Masonry height={this.state.gridHeight}>
-        {jsonPhotos.map((img, index) => this.renderBricks(img, index))}
-      </Masonry>
-    )
-  }
-
-  renderBricks (img, i) {
-    const w = (100 / this.state.columns) + '%'
-
-    return (
-      <Brick key={i} width={w}>
-        <MasonryImage src={img} />
-      </Brick>
+      <ResponsiveMasonry columnsCountBreakPoints={{300: 1, 700: 2, 900: 3}}>
+        <Masonry>
+          {jsonPhotos.map((image, i) =>
+            <MasonryImage key={i} src={image} style={{width: "100%", display: "block"}} />
+          )}
+        </Masonry>
+    	</ResponsiveMasonry>
     )
   }
 }

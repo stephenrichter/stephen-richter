@@ -20,7 +20,7 @@ const SideMenu = styled.nav`
   @media (min-width: 700px) {
     flex-direction: column;
     border-right: 1px solid #eaeaea;
-    height: 100vh;
+    height: calc(100vh - 4rem);
   }
 `
 

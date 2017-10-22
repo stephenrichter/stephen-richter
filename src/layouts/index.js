@@ -6,8 +6,8 @@ import Menu from '../components/menu'
 
 injectGlobal`
   ${resetCSS}
-  body {
-    font: 18px 'muli', sans-serif;
+  html {
+    font: 10px 'Muli', sans-serif;
   }
   p {
     line-height: 1.75
