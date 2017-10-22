@@ -2,17 +2,17 @@ import React, {Component} from "react"
 import {Row, Column} from '../components/grid'
 import CenteredLayout from '../components/centered-layout'
 
-export default class Software extends Component {
+export default class Marketing extends Component {
   render () {
     return (
-      <CenteredLayout name="software"
-                      title={`Software - ${this.props.data.site.siteMetadata.title}`}
-                      desc="I enjoy building software"
+      <CenteredLayout name="marketing"
+                      title={`Marketing - ${this.props.data.site.siteMetadata.title}`}
+                      desc="I enjoy marketing"
                       type="website"
                       image="https://cldup.com/go95bqT7sK.jpg">
         <Row>
         <div>
-          <h1>Software</h1>
+          <h1>Marketing</h1>
           <p>I’m good enough, I’m smart enough, and gosh darn it, people like me!</p>
         </div>
         </Row>
