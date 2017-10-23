@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 import {Row, Column} from '../components/grid'
 import CenteredLayout from '../components/centered-layout'
 
@@ -10,6 +11,10 @@ const Avatar = styled.img`
   width: 100%;
   height: auto;
   border-radius: 50%;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
 const Title = styled.h1`
@@ -17,6 +22,10 @@ const Title = styled.h1`
   font-size: 6.4rem !important;
   font-weight: 700;
   letter-spacing: 1px;
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `
 
 const Subtitle = styled.h2`
@@ -29,6 +38,9 @@ const Subtitle = styled.h2`
 
   & strong {
     font-weight: 500;
+  }
+  @media (max-width: 700px) {
+    text-align: center;
   }
 `
 
@@ -85,10 +97,10 @@ export default class Homepage extends Component {
 
   renderIntro () {
     return (
-      <Column colspan="3">
+      <Column colspan="8">
         <Title>{this.state.title}</Title>
         <Subtitle>
-          My name is <strong>Stephen Richter</strong>. I recently founded <a href="http://getkozmos.com">Kozmos</a>, a better bookmarking service for everyone.
+          My name is <strong>Stephen Richter</strong>, and I'm obsessed with <Link to="/journal">digital business strategy</Link> and <Link to="/marketing">marketing</Link>.
         </Subtitle>
         <Intro />
         <p><a href="mailto:stephenrichter15@gmail.com">Let's work together</a></p>
@@ -98,7 +110,7 @@ export default class Homepage extends Component {
 
   renderPhoto () {
     return (
-      <Column colspan="1" last>
+      <Column colspan="4" last>
         <Avatar src={Photo} alt="stephen richter profile" />
       </Column>
     )

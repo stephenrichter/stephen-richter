@@ -1,5 +1,5 @@
 [
   { "to": "/journal", "emoji": "📖", "title": "Journal" },
-  { "to": "/marketing", "emoji": "💻", "title": "Marketing" },
-  { "to": "/photography", "emoji": "📷", "title": "Photography" }
+  { "to": "/photography", "emoji": "📷", "title": "Photography" },
+  { "to": "/projects", "emoji": "💻", "title": "Projects" }
 ]

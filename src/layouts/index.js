@@ -3,6 +3,7 @@ import styled, { injectGlobal } from 'styled-components'
 
 import resetCSS from './reset'
 import Menu from '../components/menu'
+import BurgerMenu from '../components/burger-menu'
 
 injectGlobal`
   ${resetCSS}
@@ -41,6 +42,7 @@ const Content = styled.section`
 const Container = ({ children, data }) => {
   return (
     <Wrapper>
+      <BurgerMenu />
       <Menu />
       <Content>
         {children()}

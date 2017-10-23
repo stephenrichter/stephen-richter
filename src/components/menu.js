@@ -16,11 +16,12 @@ const SideMenu = styled.nav`
   flex: 0 0 auto;
   overflow: hidden;
   padding: 2rem;
+  flex-direction: column;
+  border-right: 1px solid #eaeaea;
+  height: calc(100vh - 4rem);
 
-  @media (min-width: 700px) {
-    flex-direction: column;
-    border-right: 1px solid #eaeaea;
-    height: calc(100vh - 4rem);
+  @media (max-width: 900px) {
+    display: none;
   }
 `
 
