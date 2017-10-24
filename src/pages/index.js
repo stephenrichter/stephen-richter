@@ -100,10 +100,10 @@ export default class Homepage extends Component {
       <Column colspan="8">
         <Title>{this.state.title}</Title>
         <Subtitle>
-          My name is <strong>Stephen Richter</strong>, and I'm obsessed with <Link to="/journal">digital business strategy</Link> and <Link to="/marketing">marketing</Link>.
+          My name is <strong>Stephen Richter</strong>, and I'm obsessed with digital business strategy and marketing.
         </Subtitle>
         <Intro />
-        <p><a href="mailto:stephenrichter15@gmail.com">Let's work together</a></p>
+        <p>Take a look at <Link to="/projects">my work</Link>, <Link to="/journal">read my blog</Link> or <a href="mailto:stephenrichter15@gmail.com">get in touch</a>!</p>
       </Column>
     )
   }

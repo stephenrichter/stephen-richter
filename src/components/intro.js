@@ -23,15 +23,13 @@ export default class Intro extends Component {
           I love to help businesses achieve success through design-thinking and digital business strategy.</p>
         
         <p>I’m super passionate about design, development, and business.
-          From a technical standpoint, I spend most of my time working with JavaScript, CSS3, and HTML5.</p>
+          From a technical standpoint, I spend most of my time working in HTML5/CSS3, JavaScript, and Adobe Creative Suite.</p>
           
         <p>I graduated from Camosun College where I obtained my Bachelor of Business Admin in marketing and communications.
-          My talent is digital business strategy (I really know how technology and business can work best together).</p>
+          My talent is in digital business strategy (I really know how technology and business work best together).</p>
         
-        <p>When not creating websites or apps, I love to spend my time with my beautiful <Strikeout>girlfriend</Strikeout> fiance Caleigh.
+        <p>When not designing or coding, I love to spend my time with my beautiful <Strikeout>girlfriend</Strikeout> fiancée Caleigh.
           I fancy myself as a decent photographer, and each year I try to take my camera on a trip somewhere new.</p>
-          
-        <p>If you want to learn more or discuss how you're business could benefit from a digital strategy...</p>
       </Container>
     )
   }
