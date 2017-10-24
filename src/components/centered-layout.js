@@ -12,7 +12,7 @@ const Container = styled.div`
     margin-bottom: 0.5rem;
   }
   p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.75;
     font-weight: 300;
     margin-bottom: 2rem;
