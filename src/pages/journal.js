@@ -61,7 +61,8 @@ export default class Journal extends Component {
           </div>
         </Row>
         <Column>
-          {posts.map((post, i) => this.renderArticle(post.node, i))}
+          <p>Coming Soon...</p>
+          {/* posts.map((post, i) => this.renderArticle(post.node, i)) */}
         </Column>
       </CenteredLayout>
     )

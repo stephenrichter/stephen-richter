@@ -34,6 +34,7 @@ const MenuLink = styled.div`
   text-transform: uppercase;
   position: relative;
   padding: 0.5rem;
+  cursor: pointer;
 
   &:hover {
     color: #111;

@@ -8,7 +8,7 @@ import Intro from '../components/intro'
 import Photo from '../assets/stephen-richter.jpg'
 
 const Avatar = styled.img`
-  width: 100%;
+  width: 60%;
   height: auto;
   border-radius: 50%;
 
@@ -43,6 +43,10 @@ const Subtitle = styled.h2`
     text-align: center;
   }
 `
+
+const Center = {
+  textAlign: 'center'
+}
 
 const titles = [
   'I build software',
@@ -110,7 +114,7 @@ export default class Homepage extends Component {
 
   renderPhoto () {
     return (
-      <Column colspan="4" last>
+      <Column style={Center} colspan="4" last>
         <Avatar src={Photo} alt="stephen richter profile" />
       </Column>
     )
