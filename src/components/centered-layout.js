@@ -18,6 +18,9 @@ const Container = styled.div`
     margin-bottom: 2rem;
     color: #666;
   }
+  strong {
+    font-weight: 700;
+  }
   a {
     color: #111;
     font-weight: 400;

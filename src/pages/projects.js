@@ -59,19 +59,30 @@ export default class Projects extends Component {
           <p>{project.date} - {project.skills}</p>
         </div>
       </div>
-    ) 
+    )
   }
 }
 
 const projects = [
   {
+    date: 'March 2023',
+    title: 'Whats Counts App',
+    summary: `What Counts is a trivia party game where the best guesstimate wins! How much does the world's most expensive pizza cost? How many blades of grass are on an artificial soccer field?
+
+You don't need to know the answer, you just have to have the closest guess - that's what counts!
+
+Categories include: Sports, History, It's Natural, Measure Up, and I Need A Dollar
+`,
+    skills: `Dart, Flutter, Firebase, iOS, Android`
+  },
+    {
     date: 'Fall 2016',
     title: 'BC Construction Association - Data Visualization',
     summary: `The BC Construction Association has a massive amount of data on construction projects and skilled workers in British Columbia.
     Visualizing this data so that it can be communicated and important decisions can be made is essential.
     This custom data visualization tool takes data from numerous different sources and displays it in a clear, concise format.`,
     skills: `NodeJS, D3js, JavaScript`
-  }
+  },
 ]
 
 export const query = graphql`
