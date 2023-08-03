@@ -17,7 +17,7 @@
 </section>
 
 <main class="flex flex-col justify-center mx-auto my-12">
-	<article class="prose lg:prose-xl">
+	<article class="prose prose-img:rounded-lg">
 		<svelte:component this={data.home.content} />
 	</article>
 </main>
