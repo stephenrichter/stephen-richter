@@ -13,7 +13,7 @@
 	export let data;
 </script>
 
-<div class="h-full max-w-screen-xl mx-auto px-8 xl:px-0 grid grid-rows-[auto_1fr_auto]">
+<div class="h-full max-w-2xl mx-auto px-8 xl:px-0 grid grid-rows-[auto_1fr_auto]">
 	<Header />
 
 	<main class="py-16">

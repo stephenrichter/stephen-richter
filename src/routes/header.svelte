@@ -14,9 +14,6 @@
 			<a href="/">Blog</a>
 		</li>
 		<li>
-			<a href="/dashboard">Dashboard</a>
-		</li>
-		<li>
 			<a href="/now">Now</a>
 		</li>
 	</ul>
