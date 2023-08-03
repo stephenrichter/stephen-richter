@@ -5,11 +5,11 @@ date: '2023-08-02'
 
 # Now
 
-##### this is what I'm up to right now 👇
+##### this is what I'm up to right now (inspired by [NowNowNow](https://nownownow.com/about)) 👇
 
-👨🏻‍💻 A Senior Software Developer & Consultant at [BASE1](https://www.base1.com/). Working on native apps for large retailers around the world.
+👨🏻‍💻 A Senior Software Developer & Consultant at [BASE1](https://www.base1.com/). Working on eCommerce apps for some of the largest brands in the world.
 
-🏃🏻‍♂️ Running, biking, and swimming whenever I can.
+🏃🏻‍♂️ Running, biking, and swimming whenever I have time.
 
 - 🚴🏻‍♂️ My first duathlon is August 6, 2023
 

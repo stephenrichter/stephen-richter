@@ -3,8 +3,6 @@ title: home
 date: '2023-07-18'
 ---
 
-# Stephen Richter
-
 ##### hi, i'm stephen 👋
 
 I'm a full stack web developer from Victoria, Canada. I help businesses achieve success through design-thinking and digital business strategy.
