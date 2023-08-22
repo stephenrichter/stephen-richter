@@ -1,5 +1,5 @@
 ---
-title: 📥 The organization system that changed my life
+title: 📥 This organization system changed my life
 description: How the PARA method can help you stay organized and productive.
 date: '2023-08-20'
 categories:
@@ -69,7 +69,7 @@ First choose an app that you use frequently to write notes and capture content �
 
 > Avoid using "one app to rule them all" and instead replicate your PARA system across any of the main apps you use (i.e. Apple Notes, Obsidian, Chrome Bookmarks, etc.)
 
-Now that you have chosen an app as a starting point, you can follow these 3 simple steps:
+Now that you have chosen an app as a starting point, you can follow these **3 simple steps**:
 
 1. Set up a folder for each of the 4 categories: "Projects", "Areas", "Resources", "Archives"
 2. Move existing content into files or folders underneath the 4 main categories as defined above
